@@ -2,7 +2,17 @@
  
 <title>Fallout Fortuna
 </title>
+<script language="javascript" type="text/javascript">
+
+function Sound(surl) {
+alert("working");<!-- this will ensure function is called successfully-->
+
+document.getElementById("myspan").innerHTML=
+"<embed src=\""+surl+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+}
+</script>
 <body>
+<span id="myspan"></span>
 <div class="overlay"></div>
 	<div class="scanline"></div>
 <div class="wrapper">	
@@ -25,10 +35,9 @@
 		</header>
 		
 		<nav class="site clear">
-			<ul><p onmouseover="PlaySound('mySound')" 
-    onmouseout="StopSound('mySound')">
-				<li><a href="https://github.com/FortunaSS13/Fortuna"  title="">Main Repository</a></li></p>
-				<p>View the live code repository</p><br />
+			<ul>
+				<li><a href="https://github.com/FortunaSS13/Fortuna"  title="">Main Repository</a></li>
+				<p onMouseOver="Sound('audio/ui_hacking_charsingle_05.wav')">View the live code repository</p><br />
 				<p> </p><br />
 				
 					<li><a href="https://discord.gg/fortuna13" title="">Discord</a></li>
