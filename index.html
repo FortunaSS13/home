@@ -25,8 +25,9 @@
 		</header>
 		
 		<nav class="site clear">
-			<ul>
-				<li><a href="https://github.com/FortunaSS13/Fortuna"  title="">Main Repository</a></li>
+			<ul><p onmouseover="PlaySound('mySound')" 
+    onmouseout="StopSound('mySound')">
+				<li><a href="https://github.com/FortunaSS13/Fortuna"  title="">Main Repository</a></li></p>
 				<p>View the live code repository</p><br />
 				<p> </p><br />
 				
@@ -51,6 +52,7 @@
 <audio id="player" autoplay>
     <source src="audio/ui_hacking_charenter_02.wav" type="audio/wav">
 </audio>
+<audio id='mySound' src='audio/ui_hacking_charsingle_05.wav'/>
 <iframe width="10" height="10" src="https://www.youtube.com/embed/HTMIKrGKdvE?autoplay=1" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 <script> 
