@@ -89,7 +89,14 @@ p {
 	margin: 0; 
 }
 	
-span { animation: blink 1s infinite }
+span { 
+animation: blink 1s infinite; 
+	display: inline-block;
+  padding: 0 10px;
+  min-width: 250px;
+ width: 100%;
+
+}
 
 ul {
 	list-style: none;
