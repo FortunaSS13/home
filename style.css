@@ -63,7 +63,11 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 h1, h2, h3 h4, h5, h6 { 
 	font-weight: normal;
 	margin: 0;
@@ -103,8 +107,9 @@ p a:after {
 }
 
 header.site {
-	margin: 0 0 40px 0;
+	margin: 0 0 -20px 0;
 	text-transform: uppercase;
+	align-items: center;
 }
 
 nav.site { 
