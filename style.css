@@ -80,7 +80,8 @@ a {
 }
 
 a:hover {
-	color: red;
+	background-color: white;
+	color: black;	
 }
 
 p { 
