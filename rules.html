@@ -10,7 +10,12 @@ document.getElementById("myspan").innerHTML=
 "<embed src=\""+surl+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
 }
 </script>
-
+<script>
+function sleep(delay) {
+    var start = new Date().getTime();
+    while (new Date().getTime() < start + delay);
+}
+</script>
 <div class="overlay"></div>
 	<div class="scanline"></div>
 <div class="wrapper">	
@@ -38,7 +43,7 @@ document.getElementById("myspan").innerHTML=
 <span id="myspan"></span>
 		<nav class="site clear">
 			<ul><p>--------------------------------------------------------------------------------</p><br><br>
-				<li><p onMouseOver="Sound('audio/ui_menu_focus.wav')" onMouseDown="Sound('audio/ui_hacking_charenter_02.wav')"><a href="https://fortunass13.github.io/home/index.html"  title="">Return</a></li><br><br></p>
+				<li><p onMouseDown="sleep(1000)" onMouseOver="Sound('audio/ui_menu_focus.wav')" onMouseDown="Sound('audio/ui_hacking_charenter_02.wav')"><a href="https://fortunass13.github.io/home/index.html"  title="">Return</a></li><br><br></p>
 				<p>Welcome to Fortuna 13, an immersive roleplay experience for those seeking to appreciate the dangers of a post-apocalyptic wasteland! This is a simplified list of our server rules; they are by no means exhaustive, and ultimately the ruling is up to the administrator. For the full list of rules, please visit our Wiki:<br>
 https://f13wiki.herma.moe/index.php/Rules
 <br>
